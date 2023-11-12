@@ -1,1 +1,0 @@
-# veriljayaa.github.io
