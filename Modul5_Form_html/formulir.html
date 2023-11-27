@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar Membuat Form</title>
+    </head>
+    <body>
+        <form action="formulir.html" method="get">
+            <div>
+                <label for="nama"> Nama </label>
+                <label style="margin-left: 54px;"> : </label>
+                <input type="text" name="nama" placeholder="Masukkan Nama">
+            </div>
+            <br>
+            <div>
+                <label for="password"> Password </label>
+                <label style="margin-left: 30px;"> : </label>
+                <input type="password" name="password" placeholder="Masukkan Password">
+            </div>
+            <br>
+            <div>
+                <label for="jenis_kelamin"> Jenis Kelamin </label>
+                <label style="margin-left: 1px;"> : </label>
+                <input type="radio" name="jenis_kelamin" value="Laki-Laki"> Laki-Laki
+                <input type="radio" name="jenis_kelamin" value="perempuan"> perempuan
+            </div>
+            <br>
+            <div>
+                <label for="hobi"> Hobi </label>
+                <label style="margin-left: 60px;"> : </label>
+                <input type="checkbox" name="hobi" value="hobi_baca"> Membaca Buku
+                <input type="checkbox" name="hobi" value="hobi_nulis"> Menulis
+                <input type="checkbox" name="hobi" value="hobi_mancing"> Memancing
+            </div>
+            <br>
+            <div>
+                <label for="asal"> Asal_Kota </label>
+                <label style="margin-left: 23px;"> : </label>
+                <select name="asal_kota" id="asal">
+                    <option value="kota_jakarta"> Kota Jakarta </option>
+                    <option value="kota_bandung"> Kota Bandung </option>
+                    <option value="kota_semarang"> Kota Semarang </option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="Komentar"> Komentar </label>
+                <label style="margin-left: 28px;"> : </label>
+                <textarea name="Komentar" rows="5" cols="20" placeholder="Silahkan katakan isi hati anda "></textarea>
+            </div>
+            <br><br>
+            <input type="submit" value="Mulai Proses!" style="margin-left: 110px;">
+        </form>
+    </body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulir_PerpusKotaMadiun</title>
+    </head>
+    <body>
+        <h1>FORMULIR PERPUSTAKAN KOTA MADIUN</h1>
+         <form action="/proses_pendaftaran" method="post">
+             <div>
+                <label for="nama"> Nama Lengkap </label>
+                <label style="margin-left: 64px;"> : </label>
+                <input type="text" id="nama" name="nama" required>
+             </div>
+             <br>
+            <div>
+                <label for="ttd"> Tempat/Tanggal Lahir </label>
+                <label style="margin-left: 20px;"> : </label>
+                <input type="text" style="width: 150px;">
+                <input type="date" id="tanggal_lahir" name="tanggal_lahir" required>
+            </div>
+            <br>
+            <div>
+                <label for="nomor_anggota"> Nomor Anggota </label>
+                <label style="margin-left: 60px;"> : </label>
+                <input type="text" id="nomor_anggota" name="nomor_anggota" required>
+            </div>
+            <br>
+            <div>
+                <label for="alamat"> Alamat </label>
+                <label style="margin-left: 118px;"> : </label>
+                <textarea id="alamat" name="alamat" rows="4" cols="50" placeholder=" Masukkan Alamat Lengkap Anda " required></textarea>
+            </div>
+            <br>
+            <div>
+                <label for="jenis_kelamin"> Jenis Kelamin </label>
+                <label style="margin-left: 74px;"> : </label>
+                <input type="radio" name="jenis_kelamin" value="Laki-Laki"> Laki-Laki
+                <input type="radio" name="jenis_kelamin" value="perempuan"> perempuan
+            </div>
+            <br>
+            <div>
+                 <label for="agama"> Agama </label>
+                 <label style="margin-left: 120px;"> : </label>
+                    <select id="agama" name="agama" required>
+                        <option value="islam">Islam</option>
+                        <option value="kristen">Kristen</option>
+                        <option value="hindu">Hindu</option>
+                        <option value="budha">Budha</option>
+                    </select>
+            </div>
+            <br>
+            <div>
+                <label for="nomor_telepon">Nomor Telepon:</label>
+                <label style="margin-left: 61px;"> : </label>
+                <input type="tel" id="nomor_telepon" name="nomor_telepon" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Email:</label>
+                <label style="margin-left: 123px;"> : </label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+        <label style="margin-left: 179px;"></label>
+        <input type="submit" value="Daftar">
+    </form>
+    </body>
+</html>
