@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Konversi Nilai</title>
+  <script>
+    function konversiNilai() {
+
+      var nilaiAngka = document.getElementById('nilaiAngka').value;
+
+      var nilaiHuruf;
+      if (nilaiAngka >= 0 && nilaiAngka <= 40) {
+        nilaiHuruf = 'E';
+      } else if (nilaiAngka <= 55) {
+        nilaiHuruf = 'D';
+      } else if (nilaiAngka <= 60) {
+        nilaiHuruf = 'C';
+      } else if (nilaiAngka <= 65) {
+        nilaiHuruf = 'BC';
+      } else if (nilaiAngka <= 70) {
+        nilaiHuruf = 'B';
+      } else if (nilaiAngka <= 80) {
+        nilaiHuruf = 'AB';
+      } else if (nilaiAngka <= 100) {
+        nilaiHuruf = 'A';
+      } else {
+        nilaiHuruf = 'Nilai tidak valid';
+      }
+
+      document.getElementById('hasilKonversi').innerHTML = 'Nilai Huruf: ' + nilaiHuruf;
+    }
+  </script>
+</head>
+<body>
+  <h1>Konversi Nilai</h1>
+  <label for="nilaiAngka">Masukkan nilai angka:</label>
+  <input type="number" id="nilaiAngka" min="0" max="100" required>
+  <button onclick="konversiNilai()">Konversi</button>
+  <p id="hasilKonversi"></p>
+</body>
+</html>

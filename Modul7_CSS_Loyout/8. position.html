@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Position</title>
+	<style>
+		.container {
+			margin: auto;
+			width: 800px;
+			height: 2000px;
+		}
+
+		.sidebar, .main, .rightbar {
+			width: 100px;
+			height: 100px;
+		}
+
+		.sidebar {
+			background-color: lightgreen;
+		}
+
+		.main {
+			background-color: lightgrey;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+		}
+
+		.rightbar {
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="sidebar">1</div>
+		<div class="main">2</div>
+		<div class="rightbar">3</div>
+	</div>
+</body>
+</html>

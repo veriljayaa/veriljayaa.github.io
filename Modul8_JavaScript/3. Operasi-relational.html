@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh Program Javascript</title>
+	<script type="text/javascript">
+		function test() {
+			var val1 = window.prompt("Nilai I :");
+			var val2 = window.prompt("Nilai II :");
+
+			document.write("<br>" + "val1 == val2" + "<br>");
+			document.write(val1 == val2);
+			document.write("<br>" + "val1 != val2" + "<br>");
+			document.write(val1 != val2);
+			document.write("<br>" + "val1 &gt val2" + "<br>");
+			document.write(val1 > val2);
+			document.write("<br>" + "val1 &lt val2" + "<br>");
+			document.write(val1 < val2);
+		}
+	</script>
+</head>
+<body>
+	<input type="button" name="button1" value="relational" onclick="test()">
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh if-else</title>
+</head>
+<body>
+	<script language="Javascript">
+		var nilai = prompt("Nilai (0-100) : " );
+		var hasil = "" ;
+		if (nilai >= 60)
+			hasil = "Lulus";
+		else
+			hasil = "Tidak Lulus";
+		document.write("Hasil: " + hasil);
+	</script>
+</body>
+</html>

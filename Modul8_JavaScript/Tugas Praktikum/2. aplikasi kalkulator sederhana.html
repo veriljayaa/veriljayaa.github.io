@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Kalkulator Sederhana</title>
+  <style>
+    input, button {
+      margin: 5px;
+    }
+  </style>
+  <script>
+    function hitung(operator) {
+      var bilangan1 = parseFloat(document.getElementById('bil1').value);
+      var bilangan2 = parseFloat(document.getElementById('bil2').value);
+
+      var hasil;
+      switch (operator) {
+        case '+':
+          hasil = bilangan1 + bilangan2;
+          break;
+        case '-':
+          hasil = bilangan1 - bilangan2;
+          break;
+        case 'x':
+          hasil = bilangan1 * bilangan2;
+          break;
+        case '/':
+          hasil = bilangan1 / bilangan2;
+          break;
+        default:
+          alert('Operator tidak valid');
+          return;
+      }
+
+      document.getElementById('hasil').value = hasil;
+    }
+  </script>
+</head>
+<body>
+  <h1>Kalkulator Sederhana</h1>
+  <label for="bil1">Bilangan 1:</label>
+  <input type="number" id="bil1" required>
+  <br>
+  <label for="bil2">Bilangan 2:</label>
+  <input type="number" id="bil2" required>
+  <br>
+  <button onclick="hitung('+')">+</button>
+  <button onclick="hitung('-')">-</button>
+  <button onclick="hitung('x')">x</button>
+  <button onclick="hitung('/')">/</button>
+  <br>
+  <label for="hasil">Hasil:</label>
+  <input type="text" id="hasil" readonly>
+  
+  <script language="javascript">
+    document.write("Dimodifikasi terakhir pada " + document.lastModified);
+  </script>
+</body>
+</html>
